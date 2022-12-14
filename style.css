@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM Sans");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/background.jfif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: 0.5s;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/background.jfif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width:120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #006696;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16;
+    border: 2px solid #006696;
+    background-color: #00669677;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    height: 100%;
+    width: 0px;
+    border-radius: 25px;
+    background-color: #006996;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.2s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+.container{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+
+.blueBG{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 5px 45px rgba(0,0,0,0.15);
+}
+
+.blueBG .box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blueBG .box h2{
+    color:#fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.blueBG .box button{
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
+
+.formBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgb(184, 184, 184);
+    border-radius: 25px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.formBx.active{
+    left: 50%;
+}
+
+.formBx .form{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    transition: 0.5s;
+}
+
+.formBx .logInForm{
+    transition-delay: 0.25s;
+}
+
+.formBx.active .logInForm{
+    left: -100%;
+    transition-delay: 0s;
+}
+
+.formBx .signUpForm{
+    left: 100%;
+    transition-delay: 0s;
+}
+
+.formBx.active .signUpForm{
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+.formBx .form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formBx .form form h3{
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.formBx .form form input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #333;
+}
+
+.formBx .form form input[type="submit"]{
+    background: #0092d6;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.formBx.active .signUpForm input[type="submit"]{
+    background: #0092d6;
+}
+
+.formBx .form form .forgot{
+    color: #333;
+}
+
+@media (max-width: 991px){
+    .container{
+        max-width: 400px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .blueBG{
+        top: 0;
+        height: 100%;
+    }
+
+    .formBx{
+        width: 100%;
+        height: 500px;
+        top: 0;
+        box-shadow: none;
+    }
+
+    .blueBG .box{
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        bottom: 0;
+    }
+
+    .box.logIn{
+        top: 0;
+    }
+    
+    .formBx.active{
+        left: 0;
+        top: 150px;
+    }
+}
+
+.navbarHighlight{
+    color: #4cc4fc;
+}
+
+h4{
+    color: #fff;
+    font-size: 5em;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #006696;
+    text-underline-offset: 12px;
+}
+
+h5{
+    color: #fff;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1.25em;
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+}
