@@ -318,3 +318,137 @@ h5{
     font-family: "DM Sans", sans-serif;
     text-decoration: none;
 }
+/* cal */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  width: 30rem;
+  height: 37rem;
+  background-color: #ADD8E6;
+  box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.month {
+  width: 100%;
+  height: 6rem;
+  background-color: #C6DCF5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.month i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.1rem;
+}
+
+.month p {
+  font-size: 1.2rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 4.5rem;
+  padding: 0 0.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1.3rem;
+  font-weight: 250;
+  letter-spacing: 0.1rem;
+  width: calc(29.6rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.1rem;
+}
+
+.days div {
+  font-size: 1.3rem;
+  margin: 0.07rem;
+  width: calc(28.82rem / 7);
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #27445C;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.3;
+}
+
+.today {
+  background-color: #00A1E0;
+}
+
+.tday {
+  width: 100%;
+  height: 11rem;
+  background-color: #C6DCF5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.tday h2{
+  font-size: 2.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.0000001rem;
+}
+
+.tday p {
+  font-size: 1.7rem;
+  margin-bottom: 0.0000005rem;
+}
+
+.tday h1 {
+  font-size: 3.525rem;
+  font-weight: 250;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.1rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+

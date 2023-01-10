@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM Sans");
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/background.jfif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: 0.5s;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/background.jfif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width:120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #006696;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+
+h4{
+    color: #fff;
+    font-size: 5em;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #006696;
+    text-underline-offset: 12px;
+    padding: 50px;
+}
+
+h5{
+    color: #fff;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1.25em;
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+}
+
+/* hydration report */
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    gap: 10px;
+}
+
+.side-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-info svg {
+    width: 50%;
+    height: auto;
+}
+
+.side-info span {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.percentage-container {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    margin: auto;
+    background-color: #00A1E0;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #fff;
+    position:relative;
+}
+
+.progress {
+    background-color: #006696;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transition: 0.5s ease;
+}
+
+.current-cups {
+    z-index: 1;
+    color: #fff;
+}
+
+.current-liters {
+    z-index: 1;
+    color: #fff;
+}
+
+.current-percentage {
+    z-index: 1;
+    
+}
+
+.buttons{
+    grid-column: -1/1;
+    margin: 10px auto;
+}
+
+button {
+    background-color: #0092d6;
+    color: #fff;
+    border: 1px solid #C6DCF5;
+    width: 60px;
+    height: 60px;
+    font-size: 45px;
+    border-radius: 50%;
+    outline-style: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color:#C6DCF5;
+}
+
+mark {
+    color: #0092d6;
+    background-color: 0;
+}
