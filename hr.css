@@ -208,3 +208,68 @@ mark {
     color: #0092d6;
     background-color: 0;
 }
+
+/* start calculator */
+@media(min-width: 768px) {	
+    .container-1 {
+      display: flex; 
+      flex-direction: column;
+  }
+    .container-2 {
+      display: flex; 
+      flex-direction: row;
+    }
+  }
+  
+  
+  .box-3 {
+    flex: 1;
+  }
+  
+  h1, legend {
+    margin-left: 10px;
+    letter-spacing: 4px;
+    font-weight: 600;
+  }
+  p#first, p#second {
+    max-width: 575px;
+    letter-spacing: 4px;
+    margin-left: 30px;
+  }
+  
+  p, label {
+    font-size: 15px;
+    line-height: 25px
+  }
+  legend {
+    font-size: 25px;
+    margin-left: 0;
+    letter-spacing: 4px;
+    font-weight: 600;
+  }	
+  button#calculate, button#clear {
+    background-color:#006696;
+    font-size: 12px;
+  }
+  button#calculate {
+    margin: 10px 0 7px 0;
+  }
+  button#clear {
+    margin-left: 10px;
+  }
+  fieldset {
+    max-width: 390px;
+    height: 400px;
+    margin-left:  50px;
+    margin-top:  0px;
+    padding-left: 20px;
+    margin: auto;
+    background-color:#00A1E0;
+    
+  }
+  label, input {
+    margin-bottom: 10px
+  }
+  .emphasis {
+    font-style: italic;				
+  }

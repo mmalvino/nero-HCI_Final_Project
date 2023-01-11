@@ -70,6 +70,26 @@
             homeostasis and normal body functions. At nero, we recommend you to drink at least <span style="color:#00A1E0">2.5 - 3 litres</span> 
             of water everday day to stay healthy and in top condition. Fill out the promt above by pressing
             on the (+) button and adjust accordingly, let's see how much water you drank today!
-        
+            <br><br><br>
+            <h5>Scroll down and fill the panel below to check how much water you need to drink daily.<br><br><br>
+
+
+<!-- calculator start-->
+            <form id="personal_info" onsubmit="return false">
+                <fieldset>
+                <legend>Hydration Calculator</legend>
+                <label for="weight">Please enter your weight:</label><br>
+                <input type="text" id="weight" size="3" maxlength="5"><br>
+                <label for="exercise">How long do you exercise per day (minutes)?</label><br>
+                <input type="text" id="exercise" size="3" maxlength="5"><br>
+                <button id="calculate" onClick="calculateWater();">Calculate</button>
+                <button id="clear" onclick="resetForm();">Clear</button><br>
+                <label for="required_water">Required daily amount in ounces:</label><br>
+                <input type="text" id="required_water" size="3" maxlength="5"><br>
+                <label for="water_bottles">Number of 16.9 ounce water bottles needed:</label><br>
+                <input type="text" id="water_bottles" size="3" maxlength="5">
+                </fieldset>
+                </form>
             <script src="hr.js"></script>
+
 </body>
